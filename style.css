@@ -76,14 +76,15 @@ section#home{
 /* next */
 #about {
   background-color: #ffffff; 
-  padding:  100px;     
+  /* reduced vertical padding to tighten space between sections */
+  padding: 60px 40px;     
 }
 
 .abtcontainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 40px;
 }
 
 .aboutleft img {
@@ -114,7 +115,31 @@ section#home{
 /* next */
  #services {
   background-color: #fefefc;
-  padding: 100px 0;
+  /* reduced vertical padding to tighten space between sections */
+  padding: 50px 0;
+}
+
+/* Responsive adjustments: reduce padding on smaller screens and stack about section */
+@media (max-width: 768px) {
+  #about {
+    padding: 40px 20px;
+  }
+
+  #services {
+    padding: 40px 0;
+  }
+
+  .abtcontainer {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .aboutleft img {
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+  }
 }
 
 .services-wrapper {

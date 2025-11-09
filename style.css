@@ -21,6 +21,7 @@ body {
   align-items: center;
   width:90%; 
   border-radius: 16px;
+
   /* backdrop-filter: blur(10px); */
   /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
 
@@ -315,6 +316,7 @@ min-height: 460px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  
 }
 #book input,textarea{
   padding: 14px 16px;
@@ -324,10 +326,12 @@ min-height: 460px;
   outline: none;
   width: 80%;
   margin: 0 auto; 
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
 }
 .book-container textarea {
   resize: none;
   min-height: 120px;
+  font-family: 'Zalando Sans SemiExpanded', sans-serif;
 }
 
 #book button{

@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Zalando Sans SemiExpanded", sans-serif;
 }
@@ -52,8 +56,8 @@ section#home{
     align-items: center;           
     justify-content: center;      
     color: rgb(255, 255, 255);               
-    text-align: center;            
-
+    text-align: center; 
+    
 }
 #home h1 {
     font-size: 4rem;
@@ -72,7 +76,6 @@ section#home{
 #home p{
     text-shadow: 2px 2px 6px rgba(23, 22, 22, 0.7);
 }
-
 /* next */
 #about {
   background-color: #ffffff; 
@@ -177,13 +180,48 @@ section#home{
 .service-box:hover {
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
+/* next */
+#video{
+  background-color: white;
+  text-align: center;
+  padding: 80px 40px;
+  font-family: "Zalando Sans SemiExpanded",sans-serif;
+
+}
+
+.video-container video{
+  width: 80%;
+  /* max-width: 900px; */
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+.video-container p{
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+/* for mobile  */
+@media (max-width: 768px) {
+  .video-container video {
+    width: 100%;
+  }
+
+  .video-container h2 {
+    font-size: 2.2rem;
+  }
+
+  .video-container p {
+    font-size: 1.1rem;
+  }
+}
 
 /* next */
  #projects {
   background-color: #f9f9f9;
   padding: 60px 0;
   text-align: center;
-  #projects {
+#projects {
   background-color: #f9f9f9;
   padding: 60px 0;
   text-align: center;
@@ -199,7 +237,7 @@ section#home{
 
 .project {
   background-color: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 20px;
   height: 430px;             
